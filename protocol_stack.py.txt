@@ -1,0 +1,14 @@
+# protocol_stack.py
+# Frame splitting, checksums, reassembly
+
+def split_into_frames(data bytes, mtu=256)
+    
+    Break data into smaller frames.
+    
+    return [data[ii+mtu] for i in range(0, len(data), mtu)]
+
+def reassemble(frames)
+    
+    Join frames back.
+    
+    return b.join(frames)

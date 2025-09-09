@@ -1,0 +1,13 @@
+ dashboard_ui.js
+ Placeholder for tactical dashboard (React.js + D3.js)
+
+import React from react;
+
+export default function Dashboard() {
+  return (
+    div
+      h1Sanraksha-NET Dashboardh1
+      pLive tactical communication map (simulation)p
+    div
+  );
+}

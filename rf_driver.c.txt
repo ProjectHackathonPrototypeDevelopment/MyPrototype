@@ -1,0 +1,23 @@
+
+// Dummy Embedded C code for RF module interface
+
+#include <stdio.h>
+#include <string.h>
+
+#define RF_BUFFER_SIZE 256
+
+void rf_send(const char *data) {
+    printf("[RF] Sending frame: %s\n", data);
+}
+
+void rf_receive(char *buffer) {
+    strcpy(buffer, "[RF] Dummy frame received");
+}
+
+int main() {
+    char rx[RF_BUFFER_SIZE];
+    rf_send("Alpha team position update");
+    rf_receive(rx);
+    printf("%s\n", rx);
+    return 0;
+}

@@ -1,0 +1,9 @@
+# RF_receive.py
+from src.crypto_module import CryptoEngine
+from src.protocol_stack import reassemble
+
+if __name__ == __main__
+    crypto = CryptoEngine(bdummy-key)
+    frames = [bENCRYPTEDAlpha moving , bto grid 23-45]
+    message = crypto.decrypt(reassemble(frames))
+    print(Received message, message.decode())

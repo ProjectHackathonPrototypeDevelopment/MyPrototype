@@ -1,0 +1,19 @@
+ server.go
+ Go placeholder for HQ command service
+
+package main
+
+import (
+    fmt
+    nethttp
+)
+
+func handler(w http.ResponseWriter, r http.Request) {
+    fmt.Fprintf(w, Sanraksha-NET HQ Command received.)
+}
+
+func main() {
+    http.HandleFunc(command, handler)
+    fmt.Println(HQ server running at httplocalhost8080command)
+    http.ListenAndServe(8080, nil)
+}

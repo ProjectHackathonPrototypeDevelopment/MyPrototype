@@ -1,0 +1,20 @@
+# rf_channel.py
+# Simulated low-bandwidth, lossy RF channel
+
+import random, time
+
+class RFChannel
+    def __init__(self, bandwidth=2400, loss=0.05)
+        self.bandwidth = bandwidth
+        self.loss = loss
+
+    def transmit(self, frames)
+        
+        Randomly drop frames, simulate delay.
+        
+        delivered = []
+        for f in frames
+            if random.random()  self.loss
+                time.sleep(len(f)self.bandwidth)
+                delivered.append(f)
+        return delivered

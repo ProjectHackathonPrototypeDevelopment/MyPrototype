@@ -1,0 +1,9 @@
+# RF_send.py
+from src.crypto_module import CryptoEngine
+from src.protocol_stack import split_into_frames
+
+if __name__ == __main__
+    crypto = CryptoEngine(bdummy-key)
+    data = crypto.encrypt(bAlpha moving to grid 23-45)
+    frames = split_into_frames(data)
+    print(Sending frames, frames)

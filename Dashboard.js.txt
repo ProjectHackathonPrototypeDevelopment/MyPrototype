@@ -1,0 +1,27 @@
+ Dashboard.js
+import React, { useEffect, useRef } from react;
+import  as d3 from d3;
+
+export default function Dashboard() {
+  const ref = useRef();
+
+  useEffect(() = {
+    const svg = d3.select(ref.current)
+      .append(svg)
+      .attr(width, 400)
+      .attr(height, 300);
+
+    svg.append(circle)
+      .attr(cx, 200)
+      .attr(cy, 150)
+      .attr(r, 40)
+      .style(fill, green);
+
+    svg.append(text)
+      .attr(x, 150)
+      .attr(y, 250)
+      .text(HQ - Secure Link Active);
+  }, []);
+
+  return div ref={ref}div;
+}

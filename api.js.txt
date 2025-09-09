@@ -1,0 +1,13 @@
+ api.js
+ Node.js placeholder for tactical API gateway
+
+const express = require(express);
+const app = express();
+app.use(express.json());
+
+app.post(send, (req, res) = {
+  console.log(Incoming message, req.body);
+  res.json({ status Forwarded securely to RF network });
+});
+
+app.listen(3000, () = console.log(API Gateway running on port 3000));

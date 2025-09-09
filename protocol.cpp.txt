@@ -1,0 +1,23 @@
+
+// C++ placeholder for frame splitting
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+std::vector<std::string> splitFrames(const std::string &data, size_t mtu) {
+    std::vector<std::string> frames;
+    for (size_t i = 0; i < data.size(); i += mtu) {
+        frames.push_back(data.substr(i, mtu));
+    }
+    return frames;
+}
+
+int main() {
+    std::string msg = "Encrypted Tactical Data Packet";
+    auto frames = splitFrames(msg, 8);
+    for (auto &f : frames) {
+        std::cout << "[FRAME] " << f << std::endl;
+    }
+    return 0;
+}
